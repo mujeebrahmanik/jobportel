@@ -1,0 +1,14 @@
+{%extends 'base.html' %}
+{%block body_block%}
+<div class="row pt-5">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <form action="" method="post">
+            {%csrf_token%}
+            <b>Are you sure you want to delete</b>
+            <input type="submit" value="YES">
+        </form>
+    </div>
+    <div class="col-4"></div>
+</div>
+{%endblock%}

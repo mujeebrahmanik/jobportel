@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+{%block body_block%}
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <form action="" method="post" class="p-4">
+            {%csrf_token%}
+            <input type="password" name="pwd1" placeholder="enter new password"> <br> <br>
+            <input type="text" name="pwd2" placeholder="confirm password">
+            <input type="submit" value="reset">
+        </form>
+    </div>
+    <div class="col-4"></div>
+</div>
+{%endblock%}
